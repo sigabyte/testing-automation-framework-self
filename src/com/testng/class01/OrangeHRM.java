@@ -28,23 +28,6 @@ public class OrangeHRM {
 	}
 
 	@Test
-	public void verifyUserCanAbleToLogin() {
-
-		// UserName input
-		WebElement user = driver.findElement(By.xpath("//input[@id='txtUsername']"));
-		user.sendKeys("Admin");
-
-		// Password input
-		WebElement passwrd = driver.findElement(By.xpath("//input[@id='txtPassword']"));
-		passwrd.sendKeys("admin123");
-
-		// login button
-		WebElement login = driver.findElement(By.xpath("//input[@id='btnLogin']"));
-		login.click();
-
-	}
-
-	@Test
 	public void verifyAdminUserMangementworks() throws InterruptedException {
 
 		// Login must be done to do this test

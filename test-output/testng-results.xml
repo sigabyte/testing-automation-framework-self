@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34538" started-at="2021-11-03T18:25:32Z" finished-at="2021-11-03T18:26:06Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34538" started-at="2021-11-03T18:25:32Z" finished-at="2021-11-03T18:26:06Z">
+      <class name="com.testng.class01.OrangeHRM">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.class01.OrangeHRM@76908cc0]" name="setUp" is-config="true" duration-ms="9270" started-at="2021-11-03T18:25:32Z" finished-at="2021-11-03T18:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAdminUserMangementworks()[pri:0, instance:com.testng.class01.OrangeHRM@76908cc0]" name="verifyAdminUserMangementworks" duration-ms="10737" started-at="2021-11-03T18:25:41Z" finished-at="2021-11-03T18:25:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserMangementworks -->
+        <test-method status="PASS" signature="closeup()[pri:0, instance:com.testng.class01.OrangeHRM@76908cc0]" name="closeup" is-config="true" duration-ms="103" started-at="2021-11-03T18:25:52Z" finished-at="2021-11-03T18:25:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.class01.OrangeHRM@76908cc0]" name="setUp" is-config="true" duration-ms="9483" started-at="2021-11-03T18:25:52Z" finished-at="2021-11-03T18:26:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserCanAbleToLogin()[pri:0, instance:com.testng.class01.OrangeHRM@76908cc0]" name="verifyUserCanAbleToLogin" duration-ms="4747" started-at="2021-11-03T18:26:02Z" finished-at="2021-11-03T18:26:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanAbleToLogin -->
+        <test-method status="PASS" signature="closeup()[pri:0, instance:com.testng.class01.OrangeHRM@76908cc0]" name="closeup" is-config="true" duration-ms="142" started-at="2021-11-03T18:26:06Z" finished-at="2021-11-03T18:26:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeup -->
+      </class> <!-- com.testng.class01.OrangeHRM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

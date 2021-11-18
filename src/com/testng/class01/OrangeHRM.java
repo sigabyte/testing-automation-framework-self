@@ -28,6 +28,20 @@ public class OrangeHRM {
 	}
 
 	@Test
+	public void verifyLoginCanBeDone() {
+		// Input User Name
+		WebElement user = driver.findElement(By.xpath("//input[@id='txtUsername']"));
+		user.sendKeys("Admin");
+		// Input Password
+		WebElement passwrd = driver.findElement(By.xpath("//input[@id='txtPassword']"));
+		passwrd.sendKeys("admin123");
+		// Button Click
+		WebElement login = driver.findElement(By.xpath("//input[@id='btnLogin']"));
+		login.click();
+
+	}
+
+	@Test
 	public void verifyAdminUserMangementworks() throws InterruptedException {
 
 		// Login must be done to do this test
@@ -46,7 +60,8 @@ public class OrangeHRM {
 		WebElement usersLink = driver.findElement(By.id("menu_admin_viewSystemUsers"));
 
 		Actions action = new Actions(driver);
-		action.moveToElement(adminLink).moveToElement(userManagementLink).click(usersLink).build().perform();
+		action.moveToElement(adminLink).pause(1000).moveToElement(userManagementLink).pause(2000).click(usersLink)
+				.build().perform();
 		Thread.sleep(3000);
 	}
 

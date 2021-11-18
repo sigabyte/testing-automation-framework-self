@@ -40,6 +40,18 @@ public class SauceTestNGDemo {
 		WebElement homePageItemName = driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']"));
 		System.out.println(homePageItemName.isDisplayed());
 	}
+	
+	@Test
+	public void verifyUserCanNotAbleToLoginWithInvalidCridentials() {
+		// Login Page
+		WebElement userNameInput = driver.findElement(By.id("user-name"));
+		WebElement passwordInput = driver.findElement(By.id("password"));
+		WebElement loginBtn = driver.findElement(By.id("login-button"));
+
+		userNameInput.sendKeys("standarduser");
+		passwordInput.sendKeys("secretsauce");
+		loginBtn.click();
+	}
 
 	@AfterMethod
 	public void cleanUp() {

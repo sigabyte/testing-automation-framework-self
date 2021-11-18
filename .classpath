@@ -83,5 +83,6 @@
 	<classpathentry kind="lib" path="/SeleniumExamplesChirag/lib/selenium-support-4.0.0.jar"/>
 	<classpathentry kind="lib" path="/SeleniumExamplesChirag/lib/slf4j-api-1.7.32.jar"/>
 	<classpathentry kind="lib" path="/SeleniumExamplesChirag/lib/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="lib/testng-7.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

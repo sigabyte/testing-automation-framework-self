@@ -5,9 +5,9 @@
   <test name="All test">
     <classes>
       <class name="com.testng.class01.SauceLoginTest">
-      <methods>
-      		<include name="verifyUserCanAbleToLogin"/>
-      </methods>
+      		<methods>
+      			<include name="verifyUserCanAbleToLogin"/>
+     		</methods>
       </class>
      </classes>
   </test>

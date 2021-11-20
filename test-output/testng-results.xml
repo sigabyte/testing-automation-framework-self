@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9090" started-at="2021-11-18T22:37:53Z" finished-at="2021-11-18T22:38:02Z">
+  <suite name="critical test" duration-ms="6320" started-at="2021-11-20T22:36:29Z" finished-at="2021-11-20T22:36:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9090" started-at="2021-11-18T22:37:53Z" finished-at="2021-11-18T22:38:02Z">
-      <class name="com.testng.class01.SauceTestNGDemo">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.class01.SauceTestNGDemo@4c9f8c13]" name="setUp" is-config="true" duration-ms="4448" started-at="2021-11-18T22:37:53Z" finished-at="2021-11-18T22:37:58Z">
+    <test name="All test" duration-ms="6320" started-at="2021-11-20T22:36:29Z" finished-at="2021-11-20T22:36:35Z">
+      <class name="com.testng.class01.SauceLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.class01.SauceLoginTest@3ba9ad43]" name="setUp" is-config="true" duration-ms="5551" started-at="2021-11-20T22:36:29Z" finished-at="2021-11-20T22:36:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserCanAbleToLogin()[pri:0, instance:com.testng.class01.SauceTestNGDemo@4c9f8c13]" name="verifyUserCanAbleToLogin" duration-ms="494" started-at="2021-11-18T22:37:58Z" finished-at="2021-11-18T22:37:58Z">
+        <test-method status="PASS" signature="verifyUserCanAbleToLogin()[pri:0, instance:com.testng.class01.SauceLoginTest@3ba9ad43]" name="verifyUserCanAbleToLogin" duration-ms="483" started-at="2021-11-20T22:36:34Z" finished-at="2021-11-20T22:36:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanAbleToLogin -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.testng.class01.SauceTestNGDemo@4c9f8c13]" name="cleanUp" is-config="true" duration-ms="192" started-at="2021-11-18T22:37:58Z" finished-at="2021-11-18T22:37:58Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.testng.class01.SauceLoginTest@3ba9ad43]" name="cleanUp" is-config="true" duration-ms="242" started-at="2021-11-20T22:36:35Z" finished-at="2021-11-20T22:36:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testng.class01.SauceTestNGDemo@4c9f8c13]" name="setUp" is-config="true" duration-ms="3400" started-at="2021-11-18T22:37:58Z" finished-at="2021-11-18T22:38:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserCanNotAbleToLoginWithInvalidCridentials()[pri:0, instance:com.testng.class01.SauceTestNGDemo@4c9f8c13]" name="verifyUserCanNotAbleToLoginWithInvalidCridentials" duration-ms="313" started-at="2021-11-18T22:38:02Z" finished-at="2021-11-18T22:38:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserCanNotAbleToLoginWithInvalidCridentials -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.testng.class01.SauceTestNGDemo@4c9f8c13]" name="cleanUp" is-config="true" duration-ms="181" started-at="2021-11-18T22:38:02Z" finished-at="2021-11-18T22:38:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- com.testng.class01.SauceTestNGDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.testng.class01.SauceLoginTest -->
+    </test> <!-- All test -->
+  </suite> <!-- critical test -->
 </testng-results>

@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.class02.SauceNavigationTest">
+      <class name="com.testng.class01.OrangeHRM">
         <methods>
           <include name="verifyLoginCanBeDone"/>
           <include name="setUp"/>
+          <include name="closeup"/>
+          <include name="verifyAdminUserMangementworks"/>
         </methods>
-      </class> <!-- com.testng.class02.SauceNavigationTest -->
+      </class> <!-- com.testng.class01.OrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

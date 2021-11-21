@@ -1,8 +1,6 @@
 package com.testng.class01;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,32 +23,15 @@ public class SauceLoginTest {
 		driver.get("https://www.saucedemo.com/");
 	}
 
-	@Test 
+	@Test(groups = { "Smoke", "Cigabyte", "Login" })
 	public void verifyUserCanAbleToLogin() {
 		// Login Page
-		WebElement userNameInput = driver.findElement(By.id("user-name"));
-		WebElement passwordInput = driver.findElement(By.id("password"));
-		WebElement loginBtn = driver.findElement(By.id("login-button"));
-
-		userNameInput.sendKeys("standard_user");
-		passwordInput.sendKeys("secret_sauce");
-		loginBtn.click();
+		SauceLoginPage loginPage = new SauceLoginPage(driver);
+		loginPage.LoginAction();
 
 		// Home Page
-		WebElement homePageItemName = driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']"));
-		System.out.println(homePageItemName.isDisplayed());
-	}
-	
-	@Test
-	public void verifyUserCanNotAbleToLoginWithInvalidCridentials() {
-		// Login Page
-		WebElement invaliduserNameInput = driver.findElement(By.id("user-name"));
-		WebElement invalidpasswordInput = driver.findElement(By.id("password"));
-		WebElement loginBtn = driver.findElement(By.id("login-button"));
-
-		invaliduserNameInput.sendKeys("standarduser");
-		invalidpasswordInput.sendKeys("secretsauce");
-		loginBtn.click();
+		SauceHomePage homePage = new SauceHomePage(driver);
+		homePage.verifyUserCanEnterHomePage();
 	}
 
 	@AfterMethod
